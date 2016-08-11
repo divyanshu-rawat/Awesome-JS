@@ -33,14 +33,10 @@
 // string_2[0] = "a";
 
 
-var string = "SERR PBQR PNZC";
+var string = "SERR CVMMN!";
 
 var array_2 = [];
 var index_array = [];
-
-// var z ='Z';
-// console.log(z.charCodeAt(0));
-
 for(i=0;i< string.length;i++)
 {
 
@@ -59,15 +55,45 @@ for(i=0;i< string.length;i++)
 		}
 		else
 		{
-				array_2[i] = String.fromCharCode(32);
+				array_2[i] = string.charCodeAt(i);
+				array_2[i] = String.fromCharCode(array_2[i]);
 				index_array.push(i);
 		}
 		// console.log(array_2[i]);
 }
 
-
-console.log(index_array);
 console.log(array_2);
+string_2 = array_2.join("");
+
+console.log(string_2);
+// var string_2;
+
+// for(i=0;i<array_2.length;i++)
+// {
+// 	string_2[i] = array_2[i];
+// }
+// var split = [];
+// var x = 0;
+// for(i=0;i<index_array.length;i++)
+// {
+// 	split[i] = array_2.splice(x, index_array[i]);
+// 	x = index_array[i] + 2;
+// }
+// console.log(split);
+// var string_2 = array_2.toString();
+// var string_3 = string_2.split(" ");
+// console.log(string_2);
+
+
+// console.log();
+
+// var array_string = [];
+
+// for(i=0;i<array_2.length;i++)
+// {
+// 	array_string.push(array_2[i]);
+// }
+// console.log(array_string);
 // console.log(typeof(" "));
 // // string = string.splice(0,1);
 // var x = array_2.indexOf(" ");
