@@ -1,4 +1,4 @@
-
+// #basic algo. coding
 
 
 var array = ["a", "b", "c", "d","e","f"];
