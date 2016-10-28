@@ -8,6 +8,8 @@ var string_class = function (str) {
 
 var array = [];
 
+// solved testing bug !!!
+
 
 
 function repeatStringNumTimes(str, num) {
