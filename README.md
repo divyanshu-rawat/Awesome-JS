@@ -4,9 +4,9 @@
 
 ##
 
-Solutions of Basic Algorithms Scripting (Free Code Camp)
+### Solutions of Basic Algorithms Scripting (Free Code Camp)
 
-# Contributing
+## Contributing
 
 1. Create your **_branch_**: `git checkout -b my-new-feature`
 
