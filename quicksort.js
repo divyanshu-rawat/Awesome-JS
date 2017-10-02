@@ -6,7 +6,7 @@ function quickSort(array) {
         if(array[0] <= array[1]){
             return array;
         } else {
-            return [array[1],array[0]];
+            return [array[1], array[0]];
         }
     }
 
@@ -25,9 +25,9 @@ function quickSort(array) {
         }
     }    
 
-    return [...quickSort(prePivot),pivot,...quickSort(postPivot)];
+    return [...quickSort(prePivot), pivot, ...quickSort(postPivot)];
 } 
 
-var b= [7,1,3,1,9,6];
-console.log("Elements Before Bubble sort-->",b);
-console.log("Elements After Bubble Sort-->",quickSort(b));
+var array = [7,1,3,1,9,6];
+console.log("Elements Before Quick sort-->", array);
+console.log("Elements After Quick Sort-->", quickSort(array));
