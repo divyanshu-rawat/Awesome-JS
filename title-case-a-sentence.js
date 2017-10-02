@@ -19,5 +19,5 @@ function titleCase(str) {
 // 1. The string is split into an array of individual words
 // 2. Each word in the array is transformed
 //      - the first index(letter) of the word becomes uppercased
-//      - all the indexes(letters) starting at index 1 become lowercased
+//      - all the indexes(letters) starting at index 1 and beyond become lowercased
 // 3. The array of title cased words is joined to form a string
