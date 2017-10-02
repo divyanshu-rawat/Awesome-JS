@@ -17,5 +17,5 @@ function selectionSort(arr){
 
 
 var arrayToSort = [5,8,9,3,7,4,6,7];
-console.log("Elements Selection Bubble sort : ",arrayToSort);
-console.log("Elements Selection Bubble sort : ",selectionSort(arrayToSort));
+console.log("Elements before selection sort : ",arrayToSort);
+console.log("Elements after selection sort : ",selectionSort(arrayToSort));
