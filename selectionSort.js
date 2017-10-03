@@ -1,21 +1,21 @@
-/*use this sorting function as follows
-var sortedArray = selectionSort(array);*/
-
-function selectionSort(arr) {
-    var length = arr.length;
-    for (var i = 0; i < length - 1; i++) {
-        var min = i;
-        for (var j = i+1; j < length; j++) { // Find the minimum element from i'th to nth element
-            if (arr[j] < arr[min]) {
-                min = j;
-            }
-        }
-
-        // Swap the minumum element found with i'th element
-        var temp = arr[min];
-        arr[min] = arr[i];
-        arr[i] = temp;
+function selectionSort(arr){
+  var minIdx, temp, 
+      len = arr.length;
+  for(var i = 0; i < len; i++){
+    minIdx = i;
+    for(var  j = i+1; j<len; j++){
+       if(arr[j]<arr[minIdx]){
+          minIdx = j;
+       }
     }
-
-    return arr;
+    temp = arr[i];
+    arr[i] = arr[minIdx];
+    arr[minIdx] = temp;
+  }
+  return arr;
 }
+
+
+var arrayToSort = [5,8,9,3,7,4,6,7];
+console.log("Elements before selection sort : ",arrayToSort);
+console.log("Elements after selection sort : ",selectionSort(arrayToSort));
