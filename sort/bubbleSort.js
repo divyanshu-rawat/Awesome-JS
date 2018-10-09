@@ -1,19 +1,14 @@
-function bubbleSort(a)
-{
-    for(var m=0;m<a.length;m++)
-    {
-        for(var i=0;i<a.length-m-1;i++)
-            {
-                if(a[i]>a[i+1])
-                {
-                    a[i]=a[i]+a[i+1];
-                    a[i+1]=a[i]-a[i+1];
-                    a[i]=a[i]-a[i+1];
-                }
-            }
-    }
-    return a;
+
+function bubbleSort(arr){
+   const len = arr.length;
+   for (let i = len-1; i>=0; i--){
+     for(let j = 1; j<=i; j++){
+       if(arr[j-1]>arr[j]){
+           let temp = arr[j-1];
+           arr[j-1] = arr[j];
+           arr[j] = temp;
+        }
+     }
+   }
+   return arr;
 }
-var a= [5,4,3,2,1];
-console.log("Elements Before Bubble sort-->",a);
-console.log("Elements After Bubble Sort-->",bubbleSort(a));
