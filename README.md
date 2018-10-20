@@ -41,3 +41,7 @@ Coding standards
 7. Put the closing bracket on a new line, without leading spaces.
 
 8. Use lower case file names without any special characters or spaces.
+
+9. Function should do one thing. They should do it well.
+
+10. Don't comment bad code, rewrite it. if code is readable you don't need comments. Explain your intention in comments for example //IF WE SORT THE ARRAY THE SEARCHING LOGIC BECOMES SIMPLE
