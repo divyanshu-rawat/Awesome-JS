@@ -1,47 +1,66 @@
+/**
+ * Represents stack data structure.
+ */
+const Stack = function() {
+  const items = [];
 
-class Stack {
-
-  constructor() {
-    this.items = [];
+  /**
+   * Returns stack size.
+   */
+  this.size = () => {
+    return items.length;
   }
 
-  size() {
-    return this.items.length;
+  /**
+   * Adds item on the top of stack.
+   */
+  this.push = (item) => {
+    return items.push(item);
   }
 
-  push(newItem) {
-    this.items = [newItem, ...this.items]
+  /**
+   * Removes and returns the top most element in the stack.
+   */
+  this.pop = () => {
+    return items.length > 0
+      ? items.pop()
+      : null;
   }
 
-  pop() {
-    const [ poppedItem, ...rest ] = this.items;
-    this.items = rest;
-    return poppedItem;
+  /**
+   * Returns the top most element in the stack, but doesn’t delete it.
+   */
+  this.peek = () => {
+    return items.length > 0
+      ? items[items.length - 1]
+      : null;
   }
 
-  items() {
-    return this.items;
+  /**
+   * Returns value indicating that the stack is empty.
+   */
+  this.isEmpty = () => {
+    return items.length === 0;
   }
-
 }
 
+/**
+ * Examples
+ */
 const myStack = new Stack();
 
-console.log("Initial stack size",myStack.size());
-console.log("Initial stack items",myStack.items);
+console.log("Initial stack size", myStack.size());
 
 myStack.push(1);
-
-console.log("Stack now contains one",myStack.items);
-console.log(myStack.size());
+console.log("Pushed value 1, current stack size: ", myStack.size());
 
 myStack.push(2);
-
-console.log("Stack now contains two",myStack.items);
-console.log(myStack.size());
+console.log("Pushed value 2, current stack size: ", myStack.size());
 
 const poppedItem = myStack.pop();
+console.log("Popped off the two", poppedItem);
+console.log("Stack only contains one, now", myStack.size());
 
-console.log("Popped off the two",poppedItem);
-console.log("Stack only contains one, now",myStack.items);
-console.log(myStack.size());
+const peekedItem = myStack.peek();
+console.log("Peeked item", peekedItem);
+console.log("Stack still contains one, now", myStack.size());
