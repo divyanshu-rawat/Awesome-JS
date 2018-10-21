@@ -8,12 +8,16 @@ class Stack {
   }
 
   pop() {
-    return this.value.length > 0 ? this.value.pop() : null;
+    return this.value.length > 0
+      ? this.value.pop()
+      : null;
   }
 
   // returns the top most elements in the stack, but doesn’t delete it.
   peek() {
-    return this.value[this.value.length - 1];
+    return this.value.length > 0
+      ? this.value[this.value.length - 1]
+      : null;
   }
 
   isEmpty() {
