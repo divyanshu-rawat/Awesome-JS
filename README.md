@@ -1,5 +1,7 @@
 
-### Algorithms in Javscript, including Q Learning in js.
+## Awesome-JS
+
+Algorithms in Javscript, including Q Learning in js.
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
@@ -25,10 +27,10 @@
 
 ### Coding Conventions: 
 
- * Variables name should be in **camelCase**
- * Always put spaces around operators ( = + - * / ), and after commas
+ * Variables name should be in **camelCase**.
+ * Always put spaces around operators ( = + - * / ), and after commas.
 
- * Always use 1 tab space for indentation of code blocks
+ * Always use 1 tab space for indentation of code blocks.
  * Always end a simple statement with a semicolon.
 
  * Put the opening bracket at the end of the first line.
