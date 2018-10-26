@@ -1,4 +1,5 @@
 
+### Algorithms in Javscript, including Q Learning in js.
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
@@ -8,9 +9,7 @@
 
 ##
 
-Solutions of Basic Algorithms Scripting (Free Code Camp)
-
-Contributing
+### Contributing
 
 1. Create your **_branch_**: `git checkout -b my-new-feature`
 
@@ -24,24 +23,21 @@ Contributing
 
 ##
 
-Coding standards
+### Coding Conventions: 
 
-1. Variables name should be in **camelCase**
+ * Variables name should be in **camelCase**
+ * Always put spaces around operators ( = + - * / ), and after commas
 
-2. Always put spaces around operators ( = + - * / ), and after commas
+ * Always use 1 tab space for indentation of code blocks
+ * Always end a simple statement with a semicolon.
 
-3. Always use 1 tab space for indentation of code blocks
+ * Put the opening bracket at the end of the first line.
+ * Use one space before the opening bracket.
 
-4.  Always end a simple statement with a semicolon.
+ * Put the closing bracket on a new line, without leading spaces.
+ * Use lower case file names without any special characters or spaces.
 
-5. Put the opening bracket at the end of the first line.
-
-6. Use one space before the opening bracket.
-
-7. Put the closing bracket on a new line, without leading spaces.
-
-8. Use lower case file names without any special characters or spaces.
-
-9. Function should do one thing. They should do it well.
-
-10. Don't comment bad code, rewrite it. if code is readable you don't need comments. Explain your intention in comments for example //IF WE SORT THE ARRAY THE SEARCHING LOGIC BECOMES SIMPLE
+ * Function should do one thing. They should do it well.
+ 
+ 
+ 
