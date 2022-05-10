@@ -3,7 +3,7 @@
  * Web links scraper 
  * function to get all links
  */  
-
+/**Great content**/
 function getLinks() 
 {
 
